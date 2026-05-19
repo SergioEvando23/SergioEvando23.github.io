@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "./designSystem/dsComponents/buttonComponent";
 
 export default function Home() {
   return (
@@ -7,6 +8,9 @@ export default function Home() {
         <h1 className="text-6xl font-bold text-center sm:text-left">
           {"Welcome to my portfolio website"}
         </h1>
+        <Button variant="primary" size="md">
+          Get Started
+        </Button>
       </main>
     </div>
   );
