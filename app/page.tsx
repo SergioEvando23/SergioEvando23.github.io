@@ -1,5 +1,6 @@
-import Image from "next/image";
 import { Button } from "./designSystem/dsComponents/buttonComponent";
+import { ImageCarousel } from "./designSystem/dsComponents/imageCarouselComponent";
+import { carouselImages } from "./designSystem/mocks/imageCarousel.mock";
 
 export default function Home() {
   return (
@@ -11,6 +12,11 @@ export default function Home() {
         <Button variant="primary" size="md">
           Get Started
         </Button>
+        <ImageCarousel
+          images={carouselImages}
+          autoPlay
+          interval={3500}
+        />
       </main>
     </div>
   );
